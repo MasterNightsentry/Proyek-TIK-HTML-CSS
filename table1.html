@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Layout</title>
+        <link rel="stylesheet" href="indexone.css">
+        <style>
+            ol{
+                list-style-type: upper-roman;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Web Layout</h1>
+        </div>
+        <!-- menu/navigatorbar -->
+        <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table1.html">Table</a>
+            <a href="List.html">List</a>
+            <a href="capek.html">STS</a>
+        </div>
+
+        <h2>Colspan & Rowspan</h2>
+        <!-- colspan=menggabungkan kolom  sedangkan rowspan=menggambungkan baris-->
+        <table class="m">
+            <tr>
+                <th rowspan="2">No.</th>
+                <th rowspan="2">Nama</th>
+                <th colspan="2">Nilai</th>
+            </tr>
+            <tr>
+                <td>Ulangan 1</td>
+                <td>Ulangan 2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Chester</td>
+                <td>5/10</td>
+                <td>7/10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mike</td>
+                <td>6/10</td>
+                <td>3/10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rob</td>
+                <td>8/10</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Brad</td>
+                <td>5/10</td>
+                <td>4/10</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dave</td>
+                <td>7/10</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Joe</td>
+                <td>9/10</td>
+                <td>10/10</td>
+            </tr>
+            
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="3">A</td>
+                <td rowspan="2">B</td>
+                <td colspan="2">C</td>
+                <td rowspan="3">D</td>
+                <td rowspan="4">E</td>
+                <td rowspan="2">N</td>
+                <td rowspan="6">H</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td rowspan="2">O</td>
+            </tr>
+            <tr>
+                <td colspan="5">M</td>
+            </tr>
+            <tr>
+                <td rowspan="2">P</td>
+                <td colspan="2">Q</td>
+                <td rowspan="2">R</td>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>T</td>
+                <td>X</td>
+                <td>Y</td>
+                <td>Z</td>
+            </tr>
+        </table>
+
+ <div class="footer">
+            <p>All rights reserved - JCM Studios</p>
+          </div>
+    </body>
+</html>

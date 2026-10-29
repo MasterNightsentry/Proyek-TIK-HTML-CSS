@@ -1,0 +1,611 @@
+*{box-sizing: border-box;
+}
+
+/* bintang menandakan default gituh */
+
+body{
+    margin: 0;
+}
+
+/* style header */
+.header{
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    color: aliceblue;
+}
+
+/* style utk the menu */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 100, 80);
+
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color:rgb(125, 51, 38);
+    color:darkred;
+}
+
+.kolom{
+    float: left;
+    padding: 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.kolom.sisi{
+    width: 25%;
+}
+
+.kolom.tengah{
+    width: 50%;
+}
+
+.footer{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Anurati";
+    src: url("Anurati.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(ice\ belt\ lab.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Anurati", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+
+h2{
+    color: antiquewhite;
+    background-color: black;
+    width: fit-content;
+    margin: 20px;
+    text-transform: uppercase;
+
+}
+
+h1{
+    color: antiquewhite;
+    background-color: rgb(38, 47, 65);
+    text-transform: uppercase;
+    margin: 40px auto 20px auto;
+}
+
+.biodata{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: rgb(38, 47, 65);
+    color:antiquewhite;
+    padding: 30px;
+    border-radius: 40px;
+    gap: 20px;
+    box-sizing: border-box;
+    
+}
+
+.photo{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+
+.photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+}
+
+.photo img top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.photo img bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.photo:hover img.top{
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.photo:hover img.bottom{
+    opacity: 1;
+}
+
+.data-area{
+    flex-grow: 1;
+    font-size: 14px;
+    text-align: left;
+}
+
+.data-item{
+    margin-bottom: 8px;
+    color:antiquewhite;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;
+    
+}
+
+.kunafa{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.kunafa:hover{
+    transform: scale(1.1);
+}
+.kunafa img{
+    width: 150px;
+    
+}
+
+.arancini{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+   
+}
+
+.arancini:hover{
+    transform: scale(1.1);
+}
+.arancini img{
+    width: 150px;
+    
+}
+
+.sourdough{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.sourdough:hover{
+    transform: scale(1.1);
+}
+.sourdough img{
+    width: 150px;
+}
+
+
+
+.drinks{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;
+    
+}
+
+.darkcacao{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.darkcacao:hover{
+    transform: scale(1.1);
+}
+.darkcacao img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.bubble{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+   
+}
+
+.bubble:hover{
+    transform: scale(1.1);
+}
+.bubble img{
+    width: 150px;
+    
+}
+
+.milk{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.milk:hover{
+    transform: scale(1.1);
+}
+.milk img{
+    width: 150px;
+}
+
+
+
+.shows{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;
+    
+}
+
+.nonton{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.nonton:hover{
+    transform: scale(1.1);
+}
+.nonton img{
+    width: 150px;
+    
+}
+
+.gambar{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+   
+}
+
+.gambar:hover{
+    transform: scale(1.1);
+}
+.gambar img{
+    width: 150px;
+    
+}
+
+.main{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.main:hover{
+    transform: scale(1.1);
+}
+.main img{
+    width: 150px;
+}
+
+
+
+.artist{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;
+    
+}
+
+.lp{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.lp:hover{
+    transform: scale(1.1);
+}
+.lp img{
+    width: 150px;
+    
+}
+
+.twenty{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+   
+}
+
+.twenty:hover{
+    transform: scale(1.1);
+}
+.twenty img{
+    width: 150px;
+    
+}
+
+.rad{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.rad:hover{
+    transform: scale(1.1);
+}
+.rad img{
+    width: 150px;
+}
+
+h3{
+    color:rgb(237, 237, 237);
+    margin-left: 10px;
+}
+
+table, td{
+    border: 3px solid;
+    border-color: black;
+    border-collapse: collapse;
+    text-align: center;    
+    color: crimson;
+    font-size: 30px;
+}
+
+table.m{
+    width: 1000px;
+    margin:140px;
+}
+
+table{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    margin: 390px;
+}
+
+td:hover{
+    background-color: rgb(46, 78, 15);
+}
+
+tr{
+    background-color:coral;
+}
+
+tr:nth-child(even){
+    background-color: rgb(185, 116, 70);
+}
+
+
+ol{
+    text-align: left;
+    list-style-type: upper-roman;
+    padding: 30px;
+    background-color:rgba(124, 36, 24, 0.628);
+    margin: 20px;
+    list-style-position: inside;
+}
+
+li{
+    color:rgb(255, 100, 80);
+    margin: 5px;
+    background-color:rgb(38, 47, 65);
+    padding: 5px;
+}
+
+li.z{
+    background-color: black;
+}
+
+li.b{
+    color:rgb(237, 227, 220);
+    background-color: darkolivegreen;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul{
+    list-style-type: disc;
+    background-color:rgb(38, 47, 65);
+    margin: 20px;
+    padding: 10px;
+    list-style-position: inside;
+
+}
+
+ul.x{
+    list-style-type: square;
+    background-color:rgb(148, 110, 53);
+    list-style-position: inside;
+}
+
+svg{
+    height: 20px;
+    width: 20px;
+}
+
+li.c{
+    background-color: aquamarine;
+
+}
+
+
+
+body.h{
+    background-color: rgb(15, 32, 75);
+    background-size: cover;
+    background-position: center;
+}
+
+h2.i{
+    color:rgb(15, 32, 75);
+    margin: 20px;
+    background-color: #ffb612;
+    font-size: 35px;
+    font-family: "Garamond", Georgia, 'Times New Roman', Times, serif
+
+}
+
+h1.j{
+    color:rgb(254, 254, 255);
+    margin: 40px auto 20px auto;
+    font-size: 100px;
+    font-family: "Garamond", Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease; 
+   
+}
+
+h1:hover{
+    transform: scale(1.1);
+    color: #ffb612;
+
+}
+.pic{
+    position: relative;
+    width: 1250px;
+    height: 700px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.pic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeRoll 20s infinite ease-in-out;
+}
+
+.pic img:nth-child(1){ animation-delay: 0s; }
+.pic img:nth-child(2){ animation-delay: 4s; }
+.pic img:nth-child(3){ animation-delay: 8s; }
+.pic img:nth-child(4){ animation-delay: 12s; }
+.pic img:nth-child(5){ animation-delay: 16s; }
+
+@keyframes fadeRoll {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  20% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.par{
+    width: 900px;
+    height: fit-content;
+    border-radius: 20px;
+    opacity: 60%;
+    background-color: rgb(254, 254, 255);
+    text-align: justify;
+    padding: 10px;
+}
+
+p{
+    font-family: "Gill Sans", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    text-indent: 40px;
+
+}
+
+.pho{
+   padding: 8px 16px;
+   position: relative;
+   align-items: center;
+   transition: transform 0.3s ease;
+   text-align: center;
+   
+}
+
+.pho:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.pho img{
+    width: 150px;
+    
+}
+
+.pho1{
+   padding: 8px 16px;
+   position: relative;
+   align-items: center;
+   transition: transform 0.3s ease;
+   text-align: center;
+}
+
+.pho1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.pho1 img{
+    width: 150px;
+    
+}
